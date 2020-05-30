@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap')
+
+$white: #fff
+$light: #6C7183
+$mid: #252936
+$dark: #000829
+
+$pink: #EB65D4
+$purple: #7464EB
+$mint: #64EBD2
+$lime: #E8EB65
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  border-radius: 2px
+
+html
+
+
+body
+  background-image: url('img/grid-bg.svg')
+  background-position: top center
+  background-size: cover
+  background-repeat: repeat-y
+  background-color: $mid
+  font-family: 'IBM Plex Mono', monospace
+  ::selection
+    background: $mint
+
+nav
+  font-family: 'IBM Plex Mono', monospace
+  weight: 700
+  margin: 1.8rem 1.8rem 4rem
+  display: flex
+  a
+    color: $white
+    text-decoration: none
+    font-size: 0.9rem
+    flex-grow: 1
+    &:hover
+      text-decoration: underline

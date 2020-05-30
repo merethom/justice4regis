@@ -1,0 +1,58 @@
+@import template.sass
+
+
+
+
+section
+  margin: 0 1.8rem
+  display: grid
+  grid-gap: 3.6rem
+  background: $light
+  padding: 3.6rem
+  a
+    padding: 1.2rem
+    background: $purple
+    text-decoration: none
+    color: $white
+    display: block
+    margin-bottom: 1rem
+    text-align: center
+    font-size: 1.15rem
+    transition: all 400ms
+    &:hover
+      opacity: 0.5
+    i
+      color: $mint
+  .donate
+    background: $mint
+    color: $dark
+    margin-bottom: 0
+    i
+      color: $dark
+  h1
+    font-size: 2rem
+    margin-bottom: 1.8rem
+    background: $purple
+    padding: 1.8rem
+    color: $white
+  p
+    font-size: 1.15rem
+    line-height: 1.8
+    color: $white
+  .subtle
+    color: $mint
+    font-weight: 700
+    font-style: italic
+    margin-top: 1.8rem
+
+
+
+footer
+  min-height: 5vh
+
+
+@media (min-width: 1000px)
+  section
+    grid-template-columns: 1fr 1fr
+    h1
+      font-size: 2.5vw

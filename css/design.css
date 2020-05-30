@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2px; }
+
+body {
+  background-image: url("img/grid-bg.svg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-color: #252936;
+  font-family: 'IBM Plex Mono', monospace; }
+  body ::-moz-selection {
+    background: #64EBD2; }
+  body ::selection {
+    background: #64EBD2; }
+
+nav {
+  font-family: 'IBM Plex Mono', monospace;
+  weight: 700;
+  margin: 1.8rem 1.8rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1; }
+    nav a:hover {
+      text-decoration: underline; }
+
+section {
+  margin: 0 1.8rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3.6rem;
+  background: #6C7183;
+  padding: 3.6rem; }
+  section a {
+    padding: 1.2rem;
+    background: #7464EB;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.15rem;
+    -webkit-transition: all 400ms;
+    -o-transition: all 400ms;
+    transition: all 400ms; }
+    section a:hover {
+      opacity: 0.5; }
+    section a i {
+      color: #64EBD2; }
+  section .donate {
+    background: #64EBD2;
+    color: #000829;
+    margin-bottom: 0; }
+    section .donate i {
+      color: #000829; }
+  section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    background: #7464EB;
+    padding: 1.8rem;
+    color: #fff; }
+  section p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #fff; }
+  section .subtle {
+    color: #64EBD2;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 1.8rem; }
+
+footer {
+  min-height: 5vh; }
+
+@media (min-width: 1000px) {
+  section {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; }
+    section h1 {
+      font-size: 2.5vw; } }
